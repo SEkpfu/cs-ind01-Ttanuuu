@@ -1,0 +1,18 @@
+csharp
+using System;
+
+class HelloWorldProgram
+{
+    static void Main()
+    {
+        Console.WriteLine("Введите имя пользователя:");
+        string username = Console.ReadLine();
+
+        Console.WriteLine("Введите возраст пользователя:");
+        int age = Convert.ToInt32(Console.ReadLine());
+
+        int nextYearAge = age + 1;
+
+        Console.WriteLine($"Привет, {username}! Вам будет {nextYearAge} лет в следующем году.");
+    }
+}
